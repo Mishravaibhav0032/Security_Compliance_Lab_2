@@ -10,7 +10,7 @@ def login():
     username = data.get('username')
     password = data.get('password')
 
-    if username == 'admin' and password == 'secure123':
+    if username == 'VaibhavMishra' and password == 'Qwerty@2792':
         app.logger.info(f"Successful login for user: {username}")
         return jsonify({"message": "Login successful"}), 200
     else:

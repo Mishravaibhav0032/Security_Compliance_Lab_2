@@ -1,0 +1,17 @@
+### ✅ Successful Login
+POST https://flask-login-monitor-0398.azurewebsites.net/login
+Content-Type: application/json
+
+{
+  "username": "VaibhavMishra",
+  "password": "Qwerty@2792"
+}
+
+### ❌ Failed Login
+POST https://flask-login-monitor-0398.azurewebsites.net/login
+Content-Type: application/json
+
+{
+  "username": "VaibhavMishra",
+  "password": "wrongpass"
+}
