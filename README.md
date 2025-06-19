@@ -62,8 +62,10 @@ https://drive.google.com/file/d/1Z4Rkckkx2b--KR44CrN6XghGrTs7rsD4/view?usp=shari
 ## 🔎 KQL Query with Explanation
 
 ```kusto
-AppTraces
-| where TimeGenerated > ago(5m)
-| where Message has "Login failed"
+AppServiceConsoleLogs
+| where _ResourceId contains "flask-login-monitor-0398"
+| where TimeGenerated > ago(30m)
+| sort by TimeGenerated desc
+
 
 
