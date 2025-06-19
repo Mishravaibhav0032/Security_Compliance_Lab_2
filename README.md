@@ -56,6 +56,9 @@ As a cloud security engineer, your goal is to secure a web app by detecting fail
 
 ---
 
+### Video Link
+https://drive.google.com/file/d/1Z4Rkckkx2b--KR44CrN6XghGrTs7rsD4/view?usp=sharing
+
 ## 🔎 KQL Query with Explanation
 
 ```kusto
@@ -63,5 +66,4 @@ AppTraces
 | where TimeGenerated > ago(5m)
 | where Message has "Login failed"
 
-### Video Link
-https://drive.google.com/file/d/1Z4Rkckkx2b--KR44CrN6XghGrTs7rsD4/view?usp=sharing
+
